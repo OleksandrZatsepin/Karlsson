@@ -1,0 +1,18 @@
+package dev.surehand.karlsson.presentation.navigation
+
+import androidx.compose.runtime.Composable
+import androidx.navigation.NavHostController
+import androidx.navigation.compose.NavHost
+
+@Composable
+fun SetupNavGraph(
+    navController: NavHostController
+) {
+    NavHost(
+        navController = navController,
+        startDestination = SPLASH_GRAPH_ROUTE,
+        route = ROOT_GRAPH_ROUTE
+    ) {
+        splashNavGraph(navController = navController)
+    }
+}

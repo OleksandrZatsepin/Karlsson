@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Karlsson</string>
+    <string name="user_name">Baby!</string>
+    <string name="greeting">Hello, </string>
+    <string name="wish_you">I wish you have a good day!</string>
+    <string name="button_1">Sweet sleep</string>
+    <string name="button_2">Insomnia</string>
+    <string name="button_3">Depression</string>
+</resources>
