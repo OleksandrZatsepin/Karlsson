@@ -16,6 +16,6 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
-    <style name="Theme.Calm.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
-    <style name="Theme.Calm.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="Theme.Karlsson.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="Theme.Karlsson.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
 </resources>

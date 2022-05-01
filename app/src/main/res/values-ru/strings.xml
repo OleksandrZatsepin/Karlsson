@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Karlsson</string>
+    <string name="menu_1">Цитата</string>
+    <string name="menu_2">Медитация</string>
+    <string name="menu_3">Музыка</string>
+    <string name="menu_4">Профиль</string>
+    <string name="daily_thought">Спокойствие, только спокойствие!</string>
+</resources>

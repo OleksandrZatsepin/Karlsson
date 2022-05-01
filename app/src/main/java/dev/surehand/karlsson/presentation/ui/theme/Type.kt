@@ -21,21 +21,21 @@ val gothicA1 = FontFamily(
 // Set of Material typography styles to start with
 val Typography = Typography(
     body1 = TextStyle(
-        color = AquaBlue,
+        color = Black,
         fontFamily = gothicA1,
-        fontWeight = FontWeight.Normal,
-        fontSize = 14.sp
+        fontWeight = FontWeight.SemiBold,
+        fontSize = 12.sp
     ),
     h1 = TextStyle(
-        color = TextWhite,
-        fontFamily = gothicA1,
-        fontWeight = FontWeight.Bold,
-        fontSize = 22.sp
-    ),
-    h2 = TextStyle(
-        color = TextWhite,
+        color = Black,
         fontFamily = gothicA1,
         fontWeight = FontWeight.Bold,
         fontSize = 18.sp
+    ),
+    h2 = TextStyle(
+        color = Black,
+        fontFamily = gothicA1,
+        fontWeight = FontWeight.SemiBold,
+        fontSize = 14.sp
     )
 )

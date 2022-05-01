@@ -8,6 +8,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import dagger.hilt.android.AndroidEntryPoint
 import dev.surehand.karlsson.presentation.navigation.SetupNavGraph
+import dev.surehand.karlsson.presentation.ui.theme.KarlssonTheme
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
@@ -18,8 +19,11 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            navController = rememberNavController()
-            SetupNavGraph(navController = navController)
+            KarlssonTheme() {
+                navController = rememberNavController()
+                SetupNavGraph(navController = navController)
+            }
         }
     }
+
 }
