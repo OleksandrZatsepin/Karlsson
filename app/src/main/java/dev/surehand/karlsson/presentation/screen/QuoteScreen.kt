@@ -53,13 +53,14 @@ fun DailyThought(
                 .background(
                     color = Beige1
                 )
-                .alpha(0.4f)
+                .alpha(0.5f)
                 .align(Alignment.Center),
             elevation = 10.dp
         ) {
             Column(
                 modifier = Modifier
                     .fillMaxHeight()
+                    .alpha(1.0f)
                     .padding(20.dp),
                 verticalArrangement = Arrangement.Center,
                 horizontalAlignment = Alignment.CenterHorizontally
