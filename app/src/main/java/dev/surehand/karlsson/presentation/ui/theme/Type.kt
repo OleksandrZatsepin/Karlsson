@@ -1,6 +1,6 @@
 package dev.surehand.karlsson.presentation.ui.theme
 
-import androidx.compose.material.Typography
+import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
@@ -20,20 +20,24 @@ val gothicA1 = FontFamily(
 
 // Set of Material typography styles to start with
 val Typography = Typography(
-    body1 = TextStyle(
-        color = Black,
+
+    bodyMedium = TextStyle(
+//        color = Black,
+//        fontFamily = FontFamily.Default,
         fontFamily = gothicA1,
         fontWeight = FontWeight.SemiBold,
         fontSize = 12.sp
     ),
-    h1 = TextStyle(
-        color = Black,
+
+    titleLarge = TextStyle(
+//        color = Black,
         fontFamily = gothicA1,
         fontWeight = FontWeight.Bold,
         fontSize = 18.sp
     ),
-    h2 = TextStyle(
-        color = Black,
+
+    titleMedium = TextStyle(
+//        color = Black,
         fontFamily = gothicA1,
         fontWeight = FontWeight.SemiBold,
         fontSize = 14.sp
