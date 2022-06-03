@@ -2,12 +2,13 @@ buildscript {
     ext {
         gradle_version = "7.1.2"
         kotlin_version = "1.6.10"
-        coroutines_version = "1.6.0"
+        coroutines_version = "1.6.1"
         hilt_version = "2.40.5"
-        core_version = "1.7.0"
-        appcompat_version = "1.4.1"
+        core_version = "1.8.0"
+        appcompat_version = "1.4.2"
         live_data_version = "2.4.1"
-        material_version = "1.5.0"
+        material3_version = "1.0.0-alpha13"
+        coil_version = "2.0.0"
         compose_version = "1.1.1"
         hilt_navigation_compose_version = "1.0.0"
         accompanist_version = "0.24.5-alpha"
@@ -18,7 +19,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.2.0'
+        classpath 'com.android.tools.build:gradle:7.2.1'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10"
         classpath "com.google.dagger:hilt-android-gradle-plugin:$hilt_version"
     }
