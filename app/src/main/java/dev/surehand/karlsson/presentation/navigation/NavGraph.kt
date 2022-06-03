@@ -16,7 +16,7 @@ fun SetupNavGraph(navController: NavHostController) {
             SplashScreen(navController = navController)
         }
         composable(route = Screen.Main.route) {
-            MainScreen(navController = navController)
+            MainScreen()
         }
     }
 }

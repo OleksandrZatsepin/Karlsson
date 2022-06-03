@@ -12,7 +12,7 @@ import dev.surehand.karlsson.presentation.ui.theme.KarlssonTheme
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
 
-    lateinit var navController: NavHostController
+    private lateinit var navController: NavHostController
 //    private val mainViewModel: MainViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
