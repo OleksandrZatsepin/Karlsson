@@ -10,6 +10,8 @@ import androidx.compose.ui.res.stringArrayResource
 import androidx.compose.ui.unit.dp
 import coil.compose.rememberAsyncImagePainter
 import dev.surehand.karlsson.R
+import dev.surehand.karlsson.common.Constants.BASE_URL
+import dev.surehand.karlsson.common.Constants.IMAGE_SIZE
 import kotlin.random.Random
 
 @ExperimentalMaterial3Api
@@ -29,7 +31,7 @@ fun ImageCard(
     ) {
         Image(
             painter = rememberAsyncImagePainter(
-                model = "https://picsum.photos/seed/${Random.nextInt()}/300/200"
+                model = "${BASE_URL}${Random.nextInt()}${IMAGE_SIZE}"
             ),
             contentDescription = null,
             modifier = Modifier
