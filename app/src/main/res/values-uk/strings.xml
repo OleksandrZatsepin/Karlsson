@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Karlsson</string>
-    <string name="menu_1">Цитата</string>
-    <string name="menu_2">Медитація</string>
-    <string name="menu_3">Музика</string>
-    <string name="menu_4">Профіль</string>
     <string name="daily_thought">Спокійно, тільки спокійно!</string>
+    <string name="internet_error">Спокійно, тільки спокійно. Просто немає интернету.</string>
 </resources>

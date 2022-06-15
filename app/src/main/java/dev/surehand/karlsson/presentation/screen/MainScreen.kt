@@ -1,75 +1,47 @@
 package dev.surehand.karlsson.presentation.screen
 
 import androidx.compose.foundation.layout.*
-import androidx.compose.material.*
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
-//import androidx.navigation.NavController
-import androidx.navigation.NavDestination
-import androidx.navigation.NavDestination.Companion.hierarchy
-import androidx.navigation.NavGraph.Companion.findStartDestination
-import androidx.navigation.NavHostController
-import androidx.navigation.compose.currentBackStackEntryAsState
-import androidx.navigation.compose.rememberNavController
-import dev.surehand.karlsson.presentation.navigation.BottomBarScreen
-import dev.surehand.karlsson.presentation.navigation.BottomNavGraph
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.unit.dp
+import dev.surehand.karlsson.R
+import dev.surehand.karlsson.presentation.component.ImageCard
 
+@ExperimentalMaterial3Api
 @Composable
 fun MainScreen() {
-    val navController = rememberNavController()
-    Scaffold(
-        bottomBar = { BottomBar(navController = navController) }
+
+    Surface(
+        modifier = Modifier.fillMaxSize(),
+        color = MaterialTheme.colorScheme.background
     ) {
-        BottomNavGraph(navController = navController)
-    }
-}
+        Scaffold(
+            topBar = {
+                SmallTopAppBar(
+                    title = {
+                        Text(text = stringResource(R.string.daily_thought))
+                    },
+                    colors = TopAppBarDefaults.smallTopAppBarColors(
+                        containerColor = MaterialTheme.colorScheme.surfaceVariant,
+                        titleContentColor = MaterialTheme.colorScheme.onSurfaceVariant
+                    )
+                )
+            }
 
-@Composable
-fun BottomBar(navController: NavHostController) {
-    val screens = listOf(
-        BottomBarScreen.Quote,
-        BottomBarScreen.Music,
-        BottomBarScreen.Profile,
-    )
-    val navBackStackEntry by navController.currentBackStackEntryAsState()
-    val currentDestination = navBackStackEntry?.destination
-
-    BottomNavigation {
-        screens.forEach { screen ->
-            AddItem(
-                screen = screen,
-                currentDestination = currentDestination,
-                navController = navController
-            )
-        }
-    }
-}
-
-@Composable
-fun RowScope.AddItem(
-    screen: BottomBarScreen,
-    currentDestination: NavDestination?,
-    navController: NavHostController
-) {
-    BottomNavigationItem(
-        label = {
-            Text(text = screen.title)
-        },
-        icon = {
-            Icon(
-                imageVector = screen.icon,
-                contentDescription = "Navigation Icon"
-            )
-        },
-        selected = currentDestination?.hierarchy?.any {
-            it.route == screen.route
-        } == true,
-        unselectedContentColor = LocalContentColor.current.copy(alpha = ContentAlpha.disabled),
-        onClick = {
-            navController.navigate(screen.route) {
-                popUpTo(navController.graph.findStartDestination().id)
-                launchSingleTop = true
+        ) {
+            values ->
+            LazyColumn(contentPadding = values) {
+                items(20) {
+                    ImageCard(
+//                        title = title,
+//                        description = description,
+                        modifier = Modifier.padding(16.dp)
+                    )
+                }
             }
         }
-    )
+    }
 }

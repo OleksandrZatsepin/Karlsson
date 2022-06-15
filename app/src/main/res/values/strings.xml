@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Karlsson</string>
-    <string name="menu_1">Quote</string>
-    <string name="menu_2">Meditate</string>
-    <string name="menu_3">Music</string>
-    <string name="menu_4">Profile</string>
     <string name="daily_thought">Calm, be calm!</string>
+    <string name="internet_error">Calm, be calm. There is just no internet.</string>
 </resources>
