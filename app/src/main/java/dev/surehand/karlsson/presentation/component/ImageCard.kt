@@ -10,8 +10,8 @@ import androidx.compose.ui.res.stringArrayResource
 import androidx.compose.ui.unit.dp
 import coil.compose.rememberAsyncImagePainter
 import dev.surehand.karlsson.R
-import dev.surehand.karlsson.common.Constants.BASE_URL
-import dev.surehand.karlsson.common.Constants.IMAGE_SIZE
+import dev.surehand.karlsson.util.Constants.BASE_URL
+import dev.surehand.karlsson.util.Constants.IMAGE_SIZE
 import kotlin.random.Random
 
 @ExperimentalMaterial3Api

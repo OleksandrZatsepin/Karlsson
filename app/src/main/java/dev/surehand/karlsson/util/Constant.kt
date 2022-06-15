@@ -1,4 +1,4 @@
-package dev.surehand.karlsson.common
+package dev.surehand.karlsson.util
 
 object Constants {
 

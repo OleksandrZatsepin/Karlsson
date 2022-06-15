@@ -2,4 +2,5 @@
 <resources>
     <string name="app_name">Karlsson</string>
     <string name="daily_thought">Calm, be calm!</string>
+    <string name="internet_error">Calm, be calm. There is just no internet.</string>
 </resources>

@@ -2,4 +2,5 @@
 <resources>
     <string name="app_name">Karlsson</string>
     <string name="daily_thought">Спокійно, тільки спокійно!</string>
+    <string name="internet_error">Спокійно, тільки спокійно. Просто немає интернету.</string>
 </resources>
